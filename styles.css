@@ -78,6 +78,7 @@
 header{
     background-color: #0C579D;
     height: 60px;
+    width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,6 +172,7 @@ h2.jaune{
 }
 footer{
     height: 100%;
+    width:100%;
     background-color: #353534;
     margin-top: 50px;
     padding: 30px;
