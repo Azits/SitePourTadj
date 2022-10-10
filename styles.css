@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    text-decoration: none;
+}
+.mandals{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    visibility: hidden;
+    transition: visibility 0.4s;
+    z-index: 9;
+    
+}
+.mandals .contour{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333333d3;
+    transition: opacity 0.4s 0.2s ease-out;
+}
+.mandal{
+    opacity: 0;
+    width: 95%;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 7px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    transition: opacity  0.4s ease-out;
+    text-align: center;
+    
+}
+.mandals.afficherM{
+    visibility: visible;
+}
+.mandals.afficherM .mandal{
+    opacity: 1;
+    transition: opacity 0.4s 0.2s ease-out;
+}
+.mandals.afficherM .contour{
+    opacity: 1;
+}
+.mandal.afficherM1{
+    z-index: 9;
+}
+.mandal.afficherM2{
+    z-index: 9;
+}
+.mandal.afficherM3{
+    z-index: 9;
+}
+.mandal.afficherM4{
+    z-index: 9;
+}
+
+.mandal p, h1{
+    margin-bottom: 20px;
+}
+.mandal ul{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.avantages{
+    color: green;
+}
+.mandal .incovenients{
+    color: rgb(255, 0, 0);
+}
+
+header{
+    background-color: #0C579D;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    color: blue;   
+    padding: 10px;
+}
+header #part1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8em;
+}
+
+.Boites{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 0.1fr);
+    column-gap:20px;
+    row-gap: 15px;
+    width: 65%;
+    height: 80%;
+    background-color: #fff;  
+    margin: auto;
+    padding: auto;
+
+}
+
+.Boite{
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 20px;
+    height: 600px;
+    text-align: center;
+    background-color: aliceblue;
+    
+}
+.Boite:hover{
+    box-shadow: 6px 6px 6px 6px  gainsboro;
+}
+
+.Boite .image{
+    
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+    
+
+}
+article h2 {
+    margin-bottom: 20px;
+
+}
+
+article .description{
+    margin-bottom: 40px;
+}
+
+article a{
+    text-decoration: none;
+    color: black;
+    
+}
+article a:hover{
+    color: blue;
+}
+
+
+a{
+    color : vert;
+}
+h1.steel{
+    
+    color : blue;
+
+}
+
+h2.vert{
+    color : #D4D83F;
+}
+
+h2.rose{
+    color : #D83F87;
+}
+h2.orange{
+    color : orange;
+}
+h2.jaune{
+    color : #F3D617;
+}
+footer{
+    height: 100%;
+    background-color: #353534;
+    margin-top: 50px;
+    padding: 30px;
+
+
+}
+#information{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 40px;
+    grid-gap: 80px;
+    width: 60%;
+    margin: auto;
+    color: #fff;
+    
+    
+    
+}
+#information h2{
+    margin-bottom: 20px;
+    font-size: 2.5ch;
+    
+}
+#information p{
+    font-size: 2ch;
+    text-align:start;
+}
+footer ul{
+    text-decoration: none;
+    font-size: 2ch;
+}
+footer li{
+    margin-bottom: 20px;
+    list-style: none;
+}
+footer .icone{
+    margin-right: 20px;
+}
+.reseauxSociaux {
+    margin-top: 20px;
+   
+}
+.reseauxSociaux img{
+    margin-left: 5px;
+    background-color: #fff;
+    border-radius: 16.9px;
+    cursor: pointer;
+
+}
+.reseauxSociaux img a{
+    text-decoration: none;
+}
+@media only screen and (max-width: 768px){
+    .Boites{
+        display: flex;
+        flex-direction: column;
+    }
+    header #part1 a{
+        font-size:1.4em; ;
+    }
+    #information{
+        display: flex;
+        flex-direction:column ;
+        
+    }
+    #information h2{
+        font-size: 2.2ch;
+    }
+    
+    .reseauxSociaux img{
+        height: 50px;
+    }
+   
+    
+    footer .icone{
+        margin-right: 10px;
+    }
+    .mandals{
+        padding: auto;
+    }
+    .mandal{
+        opacity: 0;
+        max-width: 450px;
+        min-width: 300px;
+        padding: 30px;
+        border-radius: 7px;
+        position: absolute;
+        margin: auto;
+        left:5%;
+        
+        
+        
+    }
+    .Boite{
+        padding: 15px;
+        height: 500px;
+        width: 350px;
+        text-align: center;
+        background-color: aliceblue;
+        
+    }
+    .Boite:hover{
+        box-shadow: none;
+    }
+    .Boite .image, .Boite img {
+    
+        height: 100px;
+        width: 200px;
+        margin: auto;
+        margin-bottom: 20px;
+        
+    
+    }
+    
+
+   
+
+
+    
+}
